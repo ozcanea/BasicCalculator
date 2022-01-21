@@ -12,6 +12,7 @@ namespace Calculator0
 {
     public partial class FormCalculator : Form
     {
+        //
         public FormCalculator()
         {
             InitializeComponent();
