@@ -46,6 +46,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
             this.txtPrint = new System.Windows.Forms.TextBox();
+            this.lblPrevious = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn1
@@ -166,7 +167,6 @@
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnClick);
             // 
             // btnSubtraction
             // 
@@ -176,7 +176,6 @@
             this.btnSubtraction.TabIndex = 12;
             this.btnSubtraction.Text = "-";
             this.btnSubtraction.UseVisualStyleBackColor = true;
-            this.btnSubtraction.Click += new System.EventHandler(this.btnClick);
             // 
             // btnMultiply
             // 
@@ -186,7 +185,6 @@
             this.btnMultiply.TabIndex = 13;
             this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = true;
-            this.btnMultiply.Click += new System.EventHandler(this.btnClick);
             // 
             // btnDivide
             // 
@@ -196,7 +194,6 @@
             this.btnDivide.TabIndex = 14;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
-            this.btnDivide.Click += new System.EventHandler(this.btnClick);
             // 
             // btnClear
             // 
@@ -225,12 +222,23 @@
             this.txtPrint.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtPrint.Size = new System.Drawing.Size(100, 29);
             this.txtPrint.TabIndex = 18;
+            this.txtPrint.Text = "0";
+            // 
+            // lblPrevious
+            // 
+            this.lblPrevious.AutoSize = true;
+            this.lblPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPrevious.Location = new System.Drawing.Point(211, 15);
+            this.lblPrevious.Name = "lblPrevious";
+            this.lblPrevious.Size = new System.Drawing.Size(0, 24);
+            this.lblPrevious.TabIndex = 19;
             // 
             // FormCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 412);
+            this.Controls.Add(this.lblPrevious);
             this.Controls.Add(this.txtPrint);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnClear);
@@ -279,6 +287,7 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.TextBox txtPrint;
+        private System.Windows.Forms.Label lblPrevious;
     }
 }
 

@@ -20,7 +20,7 @@ namespace Calculator0
         private void btnClick(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            lblPrint.Text += b.Text;
+            txtPrint.Text += b.Text;
         }
     }
 }
